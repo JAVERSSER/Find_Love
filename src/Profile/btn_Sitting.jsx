@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import BackButton from "../Chat/Btn_Back";
 import ToggleSwitch from "./ToggleSwitch";
+import DeleteAccount from "./btn_DeleteAccount";
 function Sitting() {
   const [value, setValue] = useState(5);
   const [valueAge, setAge] = useState(25);
@@ -157,11 +158,7 @@ function Sitting() {
 
       <div>
         <div className="mt-5">
-          <Link to="/deleteAccount">
-             <button className="bg-gray-300 w-full h-12 font-medium cursor-pointer">
-              Delete Account
-            </button>
-          </Link>
+              <DeleteAccount/>
         </div>
       </div>
 

@@ -10,6 +10,8 @@ import Chat1 from "./Chat/Chat1";
 import BackButton from "./Chat/Btn_Back";
 import Sitting from "./Profile/btn_Sitting";
 import DeleteAccount from "./Profile/btn_DeleteAccount";
+import Real_Profile from "./Body_Img/Real_Profile";
+import Real_Story from "./Body_Img/Real_Story";
 
 function App() {
   return (
@@ -20,7 +22,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         {/* <Route path="/headerHomepage" element={<HeaderHomePage />} />
         <Route path="/footerHomepage" element={<FooterHomePage />} /> */}
-        <Route path="/imgFindLove" element={<ImgFindLove />} /> 
+        <Route path="/imgFindLove" element={<ImgFindLove />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/imgFindLove" element={<ImgFindLove />} />
         <Route path="/chat" element={<Chat />} />
@@ -31,6 +33,9 @@ function App() {
         <Route path="/sitting" element={<Sitting />} />
 
         <Route path="/deleteAccount" element={<DeleteAccount />} />
+
+        <Route path="/realProfile" element={<Real_Profile />} />
+        <Route path="/realStory" element={<Real_Story />} />
 
       </Routes>
     </BrowserRouter>
