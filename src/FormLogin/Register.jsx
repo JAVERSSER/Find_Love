@@ -6,7 +6,7 @@ import { auth, db } from "../FormLogin/firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 
-function Register() {
+function Register() { 
   const [form, setForm] = useState({
     username: "",
     lastname: "",
